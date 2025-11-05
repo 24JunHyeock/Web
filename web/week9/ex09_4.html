@@ -1,0 +1,26 @@
+<!--202421231_제준혁_ex09_4.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ex09_4.html</title>
+
+</head>
+<body>
+
+	<script>
+		let n = parseInt(prompt("수를 입력해주세요."));
+		document.write(`<h1>1부터 ${n}까지 제곱표</h1><table border = \"1\"><tr><th>n</th>`);
+
+		for(let i = 1; i<n;i++){
+			document.write(`<td>${i}</td>`)
+		}
+		document.write("</tr><tr><th>n<sup>2</sup></th>");
+		for(let i = 1; i<n;i++){
+			document.write(`<td>${i*i}</td>`)
+		}
+		document.write("</tr></table>");
+	</script>
+</body>
+</html>

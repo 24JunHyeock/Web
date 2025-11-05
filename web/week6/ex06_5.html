@@ -1,0 +1,45 @@
+<!--202421231제준혁ex06_5.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>전환</title>
+<style>
+@keyframes bomb{
+	from{
+		font-size:50%;
+	}
+	to{
+		font-size:500%;
+	}
+
+}
+@keyframes bomb2{
+	0%{
+		font-size: 50%;
+	}
+	50%{
+		font-size: 50%;
+		color: red;
+	}
+	100%{
+		font-size: 500%;
+		color: black;
+	}
+	
+
+}
+span{
+	animation-name: bomb2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+<h3>font-size에 대한 전환</h3>
+<hr>
+<p><span>꽝!</span> 글자에
+ 마우스를 올려보세요.</p>
+</body>
+</html>

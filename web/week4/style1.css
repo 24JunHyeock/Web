@@ -1,0 +1,15 @@
+body{
+    background-color: mistyrose;
+    }
+h1{
+    color: purple;
+    }
+hr{
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    }
+span{
+    color: blue;
+    font-size: 20px;
+    }

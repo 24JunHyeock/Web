@@ -1,0 +1,51 @@
+<!--202421231제준혁ex06_3.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 스타일 주기</title>
+<style>
+	label{
+		display:block;
+		padding: 10px;
+	}
+	input{
+		margin-left: 10px;
+	}
+	textarea{
+		margin-left: 10px;
+	}
+	input[type=text]{
+		color: #F00;
+	}
+	input:hover{
+		background-color: aliceblue;
+	}
+	input[type=email]:focus, input[type=text]:focus{
+		font-size: 120%;
+	}
+	
+	
+	
+
+</style>
+</head>
+<body>
+<h3>CONTACT US</h3>
+<hr>
+<form>
+	<label>
+		<span>Name</span><input type="text" placeholder="Elvis">
+	</label>
+	<label>
+		<span>Email</span><input type="email" placeholder="elvis@graceland.com">
+	</label>
+	<label>
+		<span>Comment</span><textarea placeholder="메시지를 남겨주세요"></textarea>
+	</label>
+	<label>
+		<span></span><input type="submit" value="submit">
+	</label>		
+</form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    background-color: #2defdc5b;
+}
+#mk{
+    font-family:monospace;
+    background-color: aquamarine;
+    display: block;
+    width: 70px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    width: 100px;
+    
+    
+}
+.big{
+    text-shadow: 3px 3px rgb(0, 162, 255);
+
+}
+.big:hover{
+    cursor: grab;
+}
+ul{
+    list-style-type: square;
+    border: 2px solid #0651495b;
+    width: 100px;
+    border-radius: 3px;
+}
+li:hover{
+    cursor: help;
+}
+#a1{
+    background-color: aquamarine;
+    display: block;
+    width: 30px;
+    
+}
+#a2{
+    background-color: rgba(69, 208, 162, 0.568);
+    display: block;
+    width: 30px;
+    
+}
+#a3{
+    background-color: rgb(8, 194, 132);
+    display: block;
+    width: 45px;
+    
+}
+strong{
+    border-left-style: groove;
+    border-color: rgb(110, 232, 232);
+    
+}
+h3{
+    text-shadow: 4px 3px #00FFFF;
+}
+#h1{
+    position: relative;
+    left: 45%;
+    color: rgb(0, 255, 255);
+    text-shadow: 4px 4px 3px black;
+}
+#h2{
+    position: relative;
+    background-color: #27c1f4ba;
+    display: block;
+    left: 25%;
+    width: 800px;
+    text-align: center;
+}
+audio{
+    position: relative;
+    left: 40%;
+}
+
+#ar1{
+   border-top: 6px double #068080;
+   border-bottom: 6px double #068080;
+}
+footer{
+    border: 4px solid #00FFFF;
+    border-radius: 4px;
+    width: 200px;
+}
+#q{
+    position: relative;
+    left: 50px;
+    text-align: center;
+}

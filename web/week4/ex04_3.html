@@ -1,0 +1,79 @@
+<!--202421231제준혁ex04_3.html-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04_3.html</title>
+    <style>
+        div{
+            border: 1px, solid, black;
+        }
+        div#main{
+            padding: 20px;
+        }
+        p{
+            color: green;
+        }
+        .c1{
+            background: red;
+        }
+        .c2{
+            background: yellow;
+        }
+        h1, p{
+            padding: 10px;
+        }
+        #main > p{
+            text-align: center;
+        }
+        p[class]{
+            text-decoration: underline;
+        }
+        p[class=c1]{
+            font-size: 30px;
+        }/*p.c1 <-으로도 가능함*/
+        h1:hover{
+            background-color: orange;
+        }
+        h1:active{
+            font-size: 10px;
+        }
+        input:focus{
+            background-color: gray;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color:black;
+        }
+        a:active{
+            font-size: 50px;
+        }
+        h1::first-letter{
+            border: 5px,dotted,gray;
+        }
+        p:nth-child(1){
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="c1">선택자 연습</h1>
+    
+    <div id ="main">
+        <p class="c1">안녕하세요.</p>
+        <p class="c2">반갑습니다.</p>
+        <p class="c2">감사합니다.</p>
+        <div>
+            <p class="c1">HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+        <a href="http:www.naver.com">네이버</a><br>
+        <input type="text" name="uname" placeholder="이름">
+    </div>
+</body>
+</html>

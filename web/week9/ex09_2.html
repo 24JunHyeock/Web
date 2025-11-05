@@ -1,0 +1,68 @@
+<!--202421231_제준혁_ex09_2.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ex09_2.html</title>
+</head>
+<body>
+	<h1>조건문 연습</h1>
+	<script>
+		//두 수와 산술연산자를 입력받아 산술연산자에 따른 수식을 계산하여 출력
+		let a = parseInt(prompt("a를 입력하세요"));
+		let b = parseInt(prompt("b를 입력하세요"));
+		let s = prompt("산술 연산자를 입력하세요");
+		let result;
+		switch(s){
+		case "+": result = a+b;
+			document.write(`두 수의 합 ${result}`);
+			break;
+		case "-": result = a - b;
+		document.write(`두 수의 차 ${result}`);
+		break;
+		case "*": result = a * b;
+		document.write(`두 수의 곱 ${result}`);
+		break;
+		case "/": result = a / b;
+		document.write(`두 수의 몫 ${result}`);
+		break;
+		case "%": result = a % b;
+		document.write(`두 수의 나머지 ${result}`);
+		break;
+		case "**": result = a ** b;
+		document.write(`두 수의 제곱 ${result}`);
+		break;
+	default:
+		break;
+
+		}
+		document.write(`<br>`);
+		switch(s){
+		case "+": result = a+b;
+			break;
+		case "-": result = a - b;
+
+		break;
+		case "*": result = a * b;
+
+		break;
+		case "/": result = a / b;
+
+		break;
+		case "%": result = a % b;
+
+		break;
+		case "**": result = a ** b;
+		
+		break;
+	default:
+		result = "잘못된 입력";
+		break;
+
+		}
+		document.write(`<h1>${a} ${s} ${b} = ${result}</h1>`);
+	
+	</script>
+</body>
+</html>

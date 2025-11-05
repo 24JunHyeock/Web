@@ -1,0 +1,21 @@
+<form name="f1" action="save.html" method="GET">
+        <fieldset>
+            <legend>설문조사</legend>
+            <label >이름 : <input type="text" name="uname" id=""></label><br>
+            성별
+            <label><input type="radio" name="gender" value="m" checked>남자</label>
+            <label><input type="radio" name="gender" value="f">여자</label><br>
+            <label>생년월일 : <input type="date" name="birth"></label><br>
+            <label>이메일 : <input type="email" name="email" id="" placeholder="ex1234@ex5678"></label><br>
+            <label for="quality">week3의 퀄리티</label><select name="quality" id="">
+                <option value="5" selected>매우 좋음</option>
+                <option value="4">좋음</option>
+                <option value="3">보통</option>
+                <option value="2">나쁨</option>
+                <option value="1">매우 나쁨</option>
+            </select><br>
+            <label>기타 : <textarea name="etc" id="">여기에 쓰시오</textarea></label><br>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>

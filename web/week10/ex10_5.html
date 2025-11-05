@@ -1,0 +1,24 @@
+<!--202421231_제준혁_ex10_5.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ex10_5.html</title>
+</head>
+<body>
+	<script>
+		/*
+		(function(a,b){sum = a+b;}(100,200));
+		*/
+		/*
+		const sum = (function(a,b){return a+ b;}(100,200);
+		*/
+		/*
+		const sum = ((a,b)=>{return a + b;})(100,200);
+		*/
+		const sum = ((a,b)=>a+b)(100,200);
+		document.write(`함수 실행 결과 : ${sum}<br>`);
+	</script>
+</body>	
+</html>

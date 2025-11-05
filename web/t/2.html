@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>계산기</title>
+ </head>
+ 
+ <body>
+ 	<table style="border: 1px;"></table>
+ 	<script>
+ 		let n = prompt(`n을 입력해주세요`);
+ 		document.write(`<h1>1부터 n까지 제곱 표</h1>`);
+ 		document.write(`<table border=\"1\"">`);
+ 		document.write(`<tr><th>n</th>`);
+ 		for(let i = 1;i<n;i++){
+ 			document.write(`<td>${i}</td>`);
+ 		}
+ 		document.write(`</tr><tr><th>n<sup>2</sup></th>`);
+ 		for(let i = 1;i<n;i++){
+ 			document.write(`<td>${i*i}</td>`);
+ 		}
+ 		document.write(`</tr>`);
+ 	</script>
+ </body>
+ </html>

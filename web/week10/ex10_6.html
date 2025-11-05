@@ -1,0 +1,69 @@
+<!--202421231_제준혁_ex10_6.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ex10_6.html</title>
+</head>
+<body>
+	<h1>배열 객체 연습</h1>
+	<script>
+		var cities = ['서울', '대전', '대구', '부산'];
+		var name = ['최자두', '홍길동', '신짱구'];
+		var age = [12, 100, 5];
+		let result = cities.concat(name, age);
+		document.write(`결과 : ${result}<br>`);
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`원본 : ${name}<br>`);
+		document.write(`원본 : ${age}<br>`);
+
+		let joinData = cities.join();//구분자가 생략된 형태
+		document.write(`결과 : ${joinData}<br>`);
+
+		joinData = cities.join('#');//문자열 반환, 배열 X
+		document.write(`결과 : ${joinData}<br>`);
+
+		let rdata = cities.reverse();
+		document.write(`결과 : ${rdata}<br>`);
+
+		let sdata = cities.sort(); //정렬, 원본도 바꿈
+		document.write(`결과 : ${sdata}<br>`);
+		document.write(`결과 : ${cities}<br>`);
+
+		var cities = ['서울', '대전', '대구', '부산','제주', '광주'];
+		let str1 = cities.slice(1,3);
+		let str2 = cities.slice(1);//마지막 인덱스를 생략하면 끝까지 됨
+		let str3 = cities.slice(-3)//-은 -1로 시작함
+		document.write(`결과 : ${str1}<br>`);
+		document.write(`결과 : ${str2}<br>`);	
+		document.write(`결과 : ${str3}<br>`);
+
+		let s_data = cities.splice(1,3);//원본도 바꿈
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`결과 : ${s_data}<br>`);	
+
+		var cities = ['서울', '대전', '대구', '부산','제주', '광주'];
+		let n = cities.push('독도');
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`결과 : ${n}<br>`);
+
+		let removed = cities.pop(); //마지막 데이터를 제거, 삭제된 데이터 반환
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`결과 : ${removed}<br>`);
+
+		let p1 = cities.shift(); //맨 앞에 있는 데이터 삭제
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`결과 : ${p1}<br>`);
+
+		let p2 = cities.unshift('부천'); //추가, 배열의 크기 반환
+		document.write(`원본 : ${cities}<br>`);
+		document.write(`결과 : ${p2}<br>`);
+
+		var nums = [23, 5, 8, 15, 67, 43];
+		document.write(`원본 : ${nums.sort()}<br>`); //문자 정렬
+		document.write(`원본 : ${nums.sort(function(a, b){return a-b})}<br>`); //숫자 정렬
+
+	</script>
+</body>
+</html>
